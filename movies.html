@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Movie Monster</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <div>
+          <h1 class="display-3 mb-4 text-primary">Movie Monster</h1>
+          <p class="lead text-info">
+            Find almost any movie with this lovely app.
+          </p>
+          <hr class="my-1 bg-info" />
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <form id="searchForm" class="form-group">
+        <label class="col-form-label col-form-label-lg">Search Movie:</label>
+        <input
+          id="searchInput"
+          class="form-control form-control-lg"
+          type="text"
+          placeholder="enter movie title"
+        />
+        <button type="submit" class="btn btn-primary" style="margin: 20px 0">
+          Get Movie
+        </button>
+      </form>
+    </div>
+
+    <div>
+      <div id="details" class="container"></div>
+      <div id="movie-cards" class="container"></div>
+    </div>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
