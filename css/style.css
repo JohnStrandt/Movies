@@ -14,7 +14,7 @@
   display: flex;
 }
 
-#details img:hover{
+#details:hover{
   cursor: pointer;
 }
 #details ul {

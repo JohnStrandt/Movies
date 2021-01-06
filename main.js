@@ -2,7 +2,7 @@ const findMovies = (movieSearched) => {
   let movies = [];
   let markup = "";
   axios
-    .get(`http://www.omdbapi.com/?apikey=24812b9d&s=${movieSearched}`)
+    .get(`https://www.omdbapi.com/?apikey=24812b9d&s=${movieSearched}`)
     .then((response) => {
       if (response.data.Response === "True") {
         movies = response.data.Search;
@@ -44,7 +44,7 @@ const getMovieDetails = (movieID) => {
   let movieDetails = [];
   let markup = "";
   axios
-    .get(`http://www.omdbapi.com/?apikey=24812b9d&plot=full&i=${movieID}`)
+    .get(`https://www.omdbapi.com/?apikey=24812b9d&plot=full&i=${movieID}`)
     .then((response) => {
       if (response.data.Response === "True") {
         movieDetails = response.data;
