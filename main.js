@@ -6,7 +6,6 @@ const findMovies = (movieSearched) => {
     .then((response) => {
       if (response.data.Response === "True") {
         movies = response.data.Search;
-        console.log(movies);
         movies.map((movie) => {
           if (movie.Type === "movie") {
             if (movie.Poster === "N/A") {
